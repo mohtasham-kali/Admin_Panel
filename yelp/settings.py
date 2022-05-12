@@ -76,18 +76,19 @@ WSGI_APPLICATION = 'yelp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE' : 'django.db.backends.mysql',
-        'HOST' : 'localhost',
-        'USER' : 'root',
-        'PASSWORD' : '',
-        'NAME' : 'homenet',
-        'PORT' : '3306'
+        'ENGINE' : 'django.db.backends.sqlite3',
+        'HOST' : '15',
+        'USER' : 'Hacker1',
+        'PASSWORD' : 'kalilinux',
+        'NAME' : 'deprat'
     }
 }
 
 
+
+
 # Password validation
-# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -106,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/4.0/topics/i18n/
+# https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -114,8 +115,9 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_L10N = True
 
+USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
